@@ -7,18 +7,21 @@ struct caldate {
   int day;
 } ;
 
-extern unsigned int caldate_fmt();
-extern unsigned int caldate_scan();
+/*ANSI prototypes*/
+unsigned int caldate_fmt(char*,struct caldate*);
+unsigned int caldate_scan(char*,struct caldate*);
 
-extern void caldate_frommjd();
-extern long caldate_mjd();
-extern void caldate_normalize();
+void caldate_frommjd(struct caldate*,long day,int*pwday,int*pyday);
+long caldate_mjd(struct caldate*cd);
+void caldate_normalize(struct caldate*);
 
-extern void caldate_easter();
+void caldate_easter(struct caldate*);
 
-extern int caldate_isleap();
-extern int caldate_validate();
-extern int caldate_dow();
-extern int caldate_doy();
+int caldate_isleap(long year);
+int caldate_verify(struct caldate*);
+int caldate_dow(long mjd);
+int caldate_doy(long mjd);
+
+void caldate_fromxl(struct caldate*,long);
 
 #endif

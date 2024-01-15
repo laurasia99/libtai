@@ -29,7 +29,7 @@ LIBTAI=obj/tai_add.obj obj/tai_now.obj obj/tai_pack.obj obj/tai_sub.obj \
 LIBCALDATE=obj/caldate_fmt.obj obj/caldate_scan.obj obj/caldate_fmjd.obj \
 	obj/caldate_mjd.obj obj/caldate_norm.obj obj/caldate_ster.obj \
     obj/caldate_isleap.obj obj/caldate_verify.obj obj/caldate_dow.obj \
-	obj/caldate_doy.obj
+	obj/caldate_doy.obj obj/caldate_fxl.obj
 LIBCALTIME=obj/caltime_fmt.obj obj/caltime_scan.obj obj/caltime_tai.obj \
 	obj/caltime_utc.obj
 
@@ -37,7 +37,7 @@ OTHEROBJS=obj/check.obj obj/easter.obj obj/leapsecs.obj \
 	obj/nowutc.obj obj/yearcal.obj
 
 PROGRAMSx=check.exe easter.exe leapsecs.exe nowutc.exe yearcal.exe
-PROGRAMS=easter.exe leapsecs.exe yearcal.exe
+PROGRAMS=easter.exe leapsecs.exe yearcal.exe xltest.exe
 
 all: $(LIBTAI) $(LIBCALDATE) $(LIBCALTIME) $(PROGRAMS)
 
@@ -59,6 +59,8 @@ nowutc.exe: obj/nowutc.obj libtai.lib
 	link /nologo /out:$@ $**
 # Day 0 sunday
 yearcal.exe: obj/yearcal.obj libcaldate.lib
+	link /nologo /out:$@ $**
+xltest.exe: obj/xltest.obj libcaldate.lib
 	link /nologo /out:$@ $**
 
 COBJFLAGS=/nologo /c -Iw32 -Iorig
@@ -147,6 +149,10 @@ obj/caldate_verify.obj: w32/caldate_verify.c
 obj/caldate_dow.obj: w32/caldate_dow.c
 	$(CC) $(COBJFLAGS) /Fo$@ $**
 obj/caldate_doy.obj: w32/caldate_doy.c
+	$(CC) $(COBJFLAGS) /Fo$@ $**
+obj/caldate_fxl.obj: w32/caldate_fxl.c
+	$(CC) $(COBJFLAGS) /Fo$@ $**
+obj/xltest.obj: w32/xltest.c
 	$(CC) $(COBJFLAGS) /Fo$@ $**
 
 clean:
