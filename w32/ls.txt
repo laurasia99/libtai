@@ -1,0 +1,56 @@
+A leap second in 2015
+Daniel Gambis
+Observatoire de Paris
+
+
+On June 30, 2015 a "leap second" was added to the world's clocks at 
+23 hours, 59 minutes and 59 seconds Coordinated Universal Time (UTC). 
+In France, due to the +2 hour time offset with respect to the meridian origin, 
+the talking clock will announce the affected "fourth beep" at 2
+o'clock legal time.
+
+The Coordinated Universal Time (UTC, replacing GMT) is the reference time 
+scale derived from the Temps Atomique International (TAI) calculated by the 
+Bureau International des Poids et Mesures (BIPM) using a worldwide network of 
+atomic clocks. UTC differs from TAI by an integer number of seconds. It is the 
+basis of all activities in the world. UT1 is the time scale based on the 
+observation of the Earth's rotation. It is now derived mostly from the 
+observation of extragalactic radio-sources by Very Long Baseline 
+Interferometry techniques (VLBI).
+
+The various irregular fluctuations progressively detected in the rotation rate 
+of the Earth led in 1972 to the replacement of UT1 by UTC as the reference 
+time scale. However, it was desired by the scientific community to maintain 
+the difference UT1-UTC smaller than 0.9 second to ensure agreement between 
+the physical and astronomical time scales. 
+
+Why this extra second? It exists because the rotation of the Earth on its axis,
+which determines the passing of days and nights, slows down over a long period,
+mainly as a consequence of Moon-Sun attraction effects. In addition, the Earth 
+is affected by its internal (core, mantle) and external (atmosphere, oceans) 
+constituents. Nowadays, though, time is measured by procedures impervious to 
+our planet’s moods, thanks to around 250 atomic clocks belonging to several 
+countries. Together they are used to calculate UTC. In addition, we have to 
+consider that the length of the day is nowadays 2 ms longer than in the year 1820.
+
+Not surprisingly then, the Earth's rotation slowly gets out of synchronization 
+with UTC. 
+
+In view of a 1972 international agreement stipulating that the difference 
+between the two should never exceed one second, it is necessary from time 
+to time to add intercalated or leap seconds to UTC. On 1st January 2009, the 
+difference will be 34 seconds. Since 1972, leap seconds have been added with a 
+rate interval varying from six months to seven years, with the last being 
+inserted on June 30, 2012.
+
+Since the adoption of this system in 1972, partly due to the initial choice of 
+the value of the second  and secondly to the general slowing down of the Earth's 
+rotation, it has been necessary to add 26 s to UTC. The next one will be the
+27th.
+
+The decision to introduce a leap second in UTC is the responsibility of the 
+Earth Orientation Center of the International Earth Rotation and reference 
+System Service (IERS). 
+
+This center is located at the Observatoire de Paris at SYRTE department. 
+
